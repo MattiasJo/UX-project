@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Run browser-sync: browser-sync start -s -f "*.*, **/*.*" -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UX-Projekt</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Pacifico" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="fullpage">
+    	<div class="section page first-page">
+        <h1>Take a break</h1>
+        <div class="categories">
+          <div class="category">
+            <img src="./media/wind.png">
+            <p class="category__p">Enjoy the sounds of wind</p>
+          </div>
+          <div class="category">
+            <img src="./media/nature.png">
+            <p class="category__p">Enjoy the sounds of nature</p>
+          </div>
+          <div class="category">
+            <img src="./media/water.png">
+            <p class="category__p">Enjoy the sounds of water</p>
+          </div>
+        </div>
+        <a class="button animated" id="ctaBtn">Explore</a>
+      </div>
+    	<div class="section page water-page">
+        <h2>Water</h2>
+        <div class="category-content">
+          <img src="./media/water.png">
+        </div>
+      </div>
+      <div class="section page nature-page">
+        <h2>Nature</h2>
+        <div class="category-content">
+          <img src="./media/nature.png">
+        </div>
+      </div>
+      <div class="section page wind-page">
+        <h2>Wind</h2>
+        <div class="category-content">
+          <img src="./media/wind.png">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

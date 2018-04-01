@@ -1,0 +1,132 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+::selection {
+    color: #f5f6fa;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+p,a,h1,h2 {
+  color: #f5f6fa;
+}
+
+a {
+  text-align: center;
+}
+
+h1,h2 {
+  text-align: center;
+  font-size: 4em;
+  font-weight: lighter;
+  font-family: 'Pacifico';
+}
+
+h2 {
+  font-size: 3em;
+  width: 100%;
+}
+
+.page {
+  z-index: 1;
+}
+
+.first-page::after,
+.wind-page::after,
+.water-page::after,
+.nature-page::after {
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+}
+
+.first-page {
+  background-color: #f19066;
+}
+
+.first-page::after {
+  background-image: url("./media/front-background.jpg");
+}
+
+.water-page {
+  background-color: #3498db;
+}
+
+.water-page::after {
+  background-image: url("./media/water-background.jpg");
+}
+
+.nature-page {
+  background-color: #27ae60;
+}
+
+.nature-page::after {
+  background-image: url("./media/nature-background.jpg");
+}
+
+.wind-page {
+  background-color: #3498db;
+}
+
+.wind-page::after {
+  background-image: url("./media/wind-background.jpg");
+}
+
+.categories {
+  width: 75%;
+  margin: 2em auto;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.category {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.category img {
+  width: 7em;
+  height: 7em;
+  margin: 0 auto;
+}
+
+.category__p {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.category-content {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.category-content img {
+  width: 12em;
+  height: 12em;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 0.8em;
+  border-radius: 2em;
+  background-color: #f5f6fa;
+  cursor: pointer;
+  display: block;
+  width: 6em;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.3);
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
