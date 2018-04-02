@@ -20,11 +20,20 @@ h1,h2 {
   font-size: 4em;
   font-weight: lighter;
   font-family: 'Pacifico';
+  margin-bottom: 0.5em;
 }
 
 h2 {
   font-size: 3em;
   width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.description__p {
+  text-align: center;
+  font-size: 1.2em;
+  width: 50%;
+  margin: 0 auto 2em auto;
 }
 
 .page {
@@ -32,7 +41,7 @@ h2 {
 }
 
 .first-page::after,
-.wind-page::after,
+.fire-page::after,
 .water-page::after,
 .nature-page::after {
   content: "";
@@ -51,7 +60,7 @@ h2 {
 }
 
 .first-page::after {
-  background-image: url("./media/front-background.jpg");
+  background-image: url("./media/front-background-min.jpg");
 }
 
 .water-page {
@@ -59,7 +68,7 @@ h2 {
 }
 
 .water-page::after {
-  background-image: url("./media/water-background.jpg");
+  background-image: url("./media/water-background-min.jpg");
 }
 
 .nature-page {
@@ -67,20 +76,20 @@ h2 {
 }
 
 .nature-page::after {
-  background-image: url("./media/nature-background.jpg");
+  background-image: url("./media/nature-background-min.jpg");
 }
 
-.wind-page {
-  background-color: #3498db;
+.fire-page {
+  background-color: #e67e22;
 }
 
-.wind-page::after {
-  background-image: url("./media/wind-background.jpg");
+.fire-page::after {
+  background-image: url("./media/fire-background-min.jpg");
 }
 
 .categories {
   width: 75%;
-  margin: 2em auto;
+  margin: 4em auto 2em auto;
   justify-content: space-evenly;
   display: flex;
 }
@@ -107,12 +116,21 @@ h2 {
   width: 75%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
 }
 
-.category-content img {
+.category-content__img {
   width: 12em;
   height: 12em;
   margin: 0 auto;
+}
+
+.audio-button {
+  width: 4em;
+  height: 4em;
+  margin: 2em auto 0 auto;
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 .button {
@@ -129,4 +147,48 @@ h2 {
 
 .button:hover {
   background: rgba(255, 255, 255, 0.4);
+}
+
+.icon-link {
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.icon-link:hover {
+  transform: scale(1.1);
+}
+
+#fp-nav ul li a span {
+  background: #f5f6fa !important;
+}
+
+.sliderContainer {
+  display: flex;
+  margin-top: 1.5em;
+}
+
+.volume-slider {
+  -webkit-appearance: none;
+  width: 12em;
+  margin: 0 auto;
+  height: 10px;
+  border-radius: 5px;
+  background: #f5f6fa;
+  outline: none;
+  opacity: 0.7;
+  transition: .2s;
+}
+
+.volume-slider:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(45, 52, 54, 0.7);
 }

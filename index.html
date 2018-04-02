@@ -19,38 +19,60 @@
     <div id="fullpage">
     	<div class="section page first-page">
         <h1>Take a break</h1>
+        <p class="description__p">Some catchy text</p>
         <div class="categories">
           <div class="category">
-            <img src="./media/wind.png">
-            <p class="category__p">Enjoy the sounds of wind</p>
+            <a class="icon-link" id="water-link">
+              <img src="./media/water.png">
+              <p class="category__p">Enjoy the sounds of water</p>
+            </a>
           </div>
           <div class="category">
-            <img src="./media/nature.png">
-            <p class="category__p">Enjoy the sounds of nature</p>
+            <a class="icon-link" id="nature-link">
+              <img src="./media/nature.png">
+              <p class="category__p">Enjoy the sounds of nature</p>
+            </a>
           </div>
           <div class="category">
-            <img src="./media/water.png">
-            <p class="category__p">Enjoy the sounds of water</p>
+            <a class="icon-link" id="fire-link">
+              <img src="./media/bonfire.png">
+              <p class="category__p">Enjoy the sounds of a bonfire</p>
+            </a>
           </div>
         </div>
         <a class="button animated" id="ctaBtn">Explore</a>
       </div>
     	<div class="section page water-page">
         <h2>Water</h2>
+        <p class="description__p">Some descriptive text</p>
         <div class="category-content">
-          <img src="./media/water.png">
+          <img class="category-content__img" src="./media/water.png">
+          <img class="audio-button" id="audio-water" src="./media/play_button.png">
+          <div class="sliderContainer">
+            <input type="range" min="1" max="100" value="100" class="volume-slider" id="volume-water">
+          </div>
         </div>
       </div>
       <div class="section page nature-page">
         <h2>Nature</h2>
+        <p class="description__p">Some descriptive text</p>
         <div class="category-content">
-          <img src="./media/nature.png">
+          <img class="category-content__img" src="./media/nature.png">
+          <img class="audio-button" id="audio-nature" src="./media/play_button.png">
+          <div class="sliderContainer">
+            <input type="range" min="1" max="100" value="100" class="volume-slider" id="volume-nature">
+          </div>
         </div>
       </div>
-      <div class="section page wind-page">
-        <h2>Wind</h2>
+      <div class="section page fire-page">
+        <h2>Bonfire</h2>
+        <p class="description__p">Some descriptive text</p>
         <div class="category-content">
-          <img src="./media/wind.png">
+          <img class="category-content__img" src="./media/bonfire.png">
+          <img class="audio-button" id="audio-fire" src="./media/play_button.png">
+          <div class="sliderContainer">
+            <input type="range" min="1" max="100" value="100" class="volume-slider" id="volume-fire">
+          </div>
         </div>
       </div>
     </div>
