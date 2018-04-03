@@ -213,3 +213,42 @@ h2 {
   border-radius: 50%;
   background: rgba(45, 52, 54, 0.7);
 }
+
+@media only screen and (max-width: 600px) {
+    .category {
+      width: 85%;
+    }
+    .category img {
+      width: 5em;
+      height: 5em;
+    }
+    .category__p {
+      font-size: 0.9em;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 2.5em;
+    }
+    .description__p {
+      font-size: 1em;
+      width: 60%;
+    }
+    .category-content__img {
+      width: 9em;
+      height: 9em;
+    }
+    .audio-button {
+      width: 3em;
+      height: 3em;
+    }
+    .volume-slider {
+      width: 12em;
+      margin-top: 0.4em;
+    }
+    .sliderContainer img {
+      width: 1.2em;
+      height: 1.2em;
+    }
+}
