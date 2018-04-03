@@ -219,14 +219,14 @@ h2 {
       width: 80%;
     }
     .category {
-      width: 85%;
+      width: 33%;
     }
     .category img {
-      width: 5em;
-      height: 5em;
+      width: 4em;
+      height: 4em;
     }
     .category__p {
-      font-size: 0.9em;
+      font-size: 0.8em;
     }
     h1 {
       font-size: 2.5em;
