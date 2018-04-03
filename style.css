@@ -148,7 +148,6 @@ h2 {
 .button {
   padding: 0.8em;
   border-radius: 2em;
-  background-color: #f5f6fa;
   cursor: pointer;
   display: block;
   width: 6em;
@@ -212,6 +211,69 @@ h2 {
   height: 20px;
   border-radius: 50%;
   background: rgba(45, 52, 54, 0.7);
+}
+
+.timer__container {
+  width: 15em;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  top: 1em;
+  right: .5em;
+  border-radius: 3em;
+  position: fixed;
+}
+
+.timer__button {
+  padding: 0.45em;
+  background: none;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+.timer__button:hover {
+  border: 2px solid rgba(255,255,255,0);
+}
+
+.timer__input {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.2);
+  width: 2em;
+  height: 1.2em;
+  border-radius: 0.5em;
+  color: #f5f6fa;
+  text-align: center;
+  font-family: 'Pacifico';
+  vertical-align: middle;
+}
+
+.timer__input::placeholder {
+  color: #f5f6fa;
+}
+
+.timer__p {
+  font-family: 'Pacifico';
+  text-align: center;
+  margin: 0 0.5em;
+  padding: 0.3em;
+  display: inline-block;
+}
+
+.timer__time {
+  display: flex;
+  margin: 0 auto;
+}
+
+.timer__p--value {
+  margin: 0;
+  font-size: 1.1em;
+  min-width: 3em;
+}
+
+#timer__logo {
+  display: inline-block;
+  margin: auto;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 @media only screen and (max-width: 600px) {

@@ -85,4 +85,22 @@ $(document).ready(function() {
 	$('#ctaBtn').on( "click", function() {
 		$.fn.fullpage.moveSectionDown();
 	});
+
+	$('#timerBtn').on( "click", function() {
+		$('#timer__logo').addClass('tada');
+		var duration = $('#timerInput')[0].value * 1000 * 60;
+		var min, sec;
+		if(duration === 0) { duration = 5 * 1000 * 60; }
+		var timer = setInterval(function(){
+			if(duration > 0) {
+				duration -= 1000;
+				min = Math.floor(duration / (60 * 1000));
+				sec = Math.floor((duration / 1000) % 60);
+				document.getElementById("timerVal").innerHTML = min + "m " + sec + "s";
+			} else {
+				document.getElementById("timerVal").innerHTML = "0m 0s";
+				clearInterval(timer);
+			}
+		}, 1000);
+	});
 });
