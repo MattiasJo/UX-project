@@ -60,7 +60,7 @@ h2 {
 }
 
 .first-page::after {
-  background-image: url("./media/front-background-min.jpg");
+  background-image: url("./media/front-background.jpg");
   opacity: 0.4;
 }
 
@@ -69,7 +69,7 @@ h2 {
 }
 
 .water-page::after {
-  background-image: url("./media/water-background-min.jpg");
+  background-image: url("./media/water-background.jpg");
   opacity: 0.3;
 }
 
@@ -78,7 +78,7 @@ h2 {
 }
 
 .nature-page::after {
-  background-image: url("./media/nature-background-min.jpg");
+  background-image: url("./media/nature-background.jpg");
   opacity: 0.45;
 }
 
@@ -87,7 +87,7 @@ h2 {
 }
 
 .fire-page::after {
-  background-image: url("./media/fire-background-min.jpg");
+  background-image: url("./media/fire-background.jpg");
 }
 
 .categories {
