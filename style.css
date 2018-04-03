@@ -79,6 +79,7 @@ h2 {
 
 .nature-page::after {
   background-image: url("./media/nature-background-min.jpg");
+  opacity: 0.45;
 }
 
 .fire-page {
@@ -130,10 +131,14 @@ h2 {
 .audio-button {
   width: 4em;
   height: 4em;
-  margin: 2em auto 0 auto;
+  margin: 3em auto 0 auto;
   cursor: pointer;
   opacity: 0.9;
   transition: all .2s ease-in-out;
+}
+
+#audio-water {
+  margin-top: 1.5em;
 }
 
 .audio-button:hover {
@@ -171,16 +176,16 @@ h2 {
 
 .sliderContainer {
   display: flex;
-  margin: 1.5em auto 0 auto;
+  margin: 1em auto 0 auto;
 }
 
 .sliderContainer img {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.4em;
+  height: 1.4em;
 }
 
 .sliderContainer img:first-child {
-  margin-right: -0.5em;
+  margin-right: -0.4em;
 }
 
 .volume-slider {
@@ -192,7 +197,7 @@ h2 {
   outline: none;
   opacity: 0.7;
   transition: .2s;
-  margin: 0.7em 1em;
+  margin: 0.6em 1em;
 }
 
 .volume-slider:hover {
