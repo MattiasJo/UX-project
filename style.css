@@ -32,7 +32,7 @@ h2 {
 .description__p {
   text-align: center;
   font-size: 1.2em;
-  width: 50%;
+  width: 45%;
   margin: 0 auto 2em auto;
 }
 
@@ -45,7 +45,7 @@ h2 {
 .water-page::after,
 .nature-page::after {
   content: "";
-  opacity: 0.4;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
@@ -61,6 +61,7 @@ h2 {
 
 .first-page::after {
   background-image: url("./media/front-background-min.jpg");
+  opacity: 0.4;
 }
 
 .water-page {
@@ -69,6 +70,7 @@ h2 {
 
 .water-page::after {
   background-image: url("./media/water-background-min.jpg");
+  opacity: 0.3;
 }
 
 .nature-page {
@@ -80,7 +82,7 @@ h2 {
 }
 
 .fire-page {
-  background-color: #e67e22;
+  background-color: #e55039;
 }
 
 .fire-page::after {
@@ -131,6 +133,11 @@ h2 {
   margin: 2em auto 0 auto;
   cursor: pointer;
   opacity: 0.9;
+  transition: all .2s ease-in-out;
+}
+
+.audio-button:hover {
+  transform: scale(1.1);
 }
 
 .button {
@@ -164,19 +171,28 @@ h2 {
 
 .sliderContainer {
   display: flex;
-  margin-top: 1.5em;
+  margin: 1.5em auto 0 auto;
+}
+
+.sliderContainer img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.sliderContainer img:first-child {
+  margin-right: -0.5em;
 }
 
 .volume-slider {
   -webkit-appearance: none;
-  width: 12em;
-  margin: 0 auto;
-  height: 10px;
+  width: 15em;
+  height: 6px;
   border-radius: 5px;
   background: #f5f6fa;
   outline: none;
   opacity: 0.7;
   transition: .2s;
+  margin: 0.7em 1em;
 }
 
 .volume-slider:hover {
