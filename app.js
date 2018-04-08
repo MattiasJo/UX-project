@@ -9,7 +9,8 @@ var playing = {
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		navigation: true
+		navigation: true,
+		navigationTooltips: ['First page', 'Water stream', 'Nature', 'Bonfire']
 	});
 
 	setInterval(function() {
