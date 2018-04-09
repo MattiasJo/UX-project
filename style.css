@@ -126,6 +126,12 @@ h2 {
   width: 12em;
   height: 12em;
   margin: 0 auto;
+  transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+}
+
+.pulse {
+  opacity: 0.5;
+  transform: scale(1.1);
 }
 
 .audio-button {

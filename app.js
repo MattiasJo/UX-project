@@ -6,11 +6,12 @@ var playing = {
 	'audio-water': false,
 	'audio-fire': false
 };
+var fadeTimer;
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		navigation: true,
-		navigationTooltips: ['First page', 'Water stream', 'Nature', 'Bonfire']
+		navigationTooltips: ['First page', 'Water stream', 'Forest', 'Bonfire']
 	});
 
 	setInterval(function() {
@@ -38,10 +39,13 @@ $(document).ready(function() {
 					document.getElementById('audio-nature').src = "./media/play_button.png";
 					nature_sounds.pause();
 					playing[this.id] = false;
+					$(document.getElementById('img-nature')).removeClass("pulse");
+					clearInterval(fadeTimer);
 				} else {
 					document.getElementById('audio-nature').src = "./media/pause_button.png";
 					nature_sounds.play();
 					playing[this.id] = true;
+					fade(document.getElementById('img-nature'));
 				}
 				break;
 			case 'audio-water':
@@ -49,10 +53,13 @@ $(document).ready(function() {
 					document.getElementById('audio-water').src = "./media/play_button.png";
 					water_sounds.pause();
 					playing[this.id] = false;
+					$(document.getElementById('img-water')).removeClass("pulse");
+					clearInterval(fadeTimer);
 				} else {
 					document.getElementById('audio-water').src = "./media/pause_button.png";
 					water_sounds.play();
 					playing[this.id] = true;
+					fade(document.getElementById('img-water'));
 				}
 				break;
 			case 'audio-fire':
@@ -60,14 +67,30 @@ $(document).ready(function() {
 					document.getElementById('audio-fire').src = "./media/play_button.png";
 					fire_sounds.pause();
 					playing[this.id] = false;
+					$(document.getElementById('img-fire')).removeClass("pulse");
+					clearInterval(fadeTimer);
 				} else {
 					document.getElementById('audio-fire').src = "./media/pause_button.png";
 					fire_sounds.play();
 					playing[this.id] = true;
+					fade(document.getElementById('img-fire'));
 				}
 				break;
 		}
 	});
+
+	function fade(img) {
+		$(img).addClass("pulse");
+		var faded = true;
+		fadeTimer = setInterval(function() {
+			if(!faded) {
+				$(img).addClass("pulse");
+			} else {
+				$(img).removeClass("pulse");
+			}
+			faded = !faded;
+		}, 4000);
+	}
 
 	$('.volume-slider').on("click", function(){
 		switch(this.id) {
